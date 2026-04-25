@@ -123,19 +123,11 @@
 - [x] Create database initialization script (`src/main/resources/sql/init.sql`)
 - [x] Create seed data in `init.sql` (1 author, 3 categories, 3 posts, 2 comments)
 
-### Phase 3: Repositories
-- [ ] Create JPA Repository interfaces:
-  - `AuthorRepository`
-  - `CategoryRepository`
-  - `PostRepository`
-  - `CommentRepository`
-- [ ] Add custom query methods:
-  - `findBySlug(String slug)`
-  - `findByFeaturedPostTrue()`
-  - `findTop3ByOrderByCreatedAtDesc()`
-  - `findByCategoriesSlug(String slug)`
-  - `findByCreatedAtGreaterThanEqualAndSlugNotOrderByCreatedAtAsc()`
-  - `findByCreatedAtLessThanEqualAndSlugNotOrderByCreatedAtDesc()`
+### Phase 3: Repositories ✅
+- [x] `AuthorRepository`
+- [x] `CategoryRepository` — `findBySlug()`
+- [x] `PostRepository` — `findBySlug()`, `findByFeaturedPostTrue()`, `findTop3ByOrderByCreatedAtDesc()`, `findByCategoriesSlug()`, `findSimilarPosts()`, adjacent post queries
+- [x] `CommentRepository` — `findByPostSlugOrderByCreatedAtDesc()`
 
 ### Phase 4: DTOs (Data Transfer Objects)
 - [ ] Create response DTOs to match frontend expectations:
