@@ -113,15 +113,15 @@
   - CORS configuration (allow Next.js frontend origin)
 - [x] Create basic project structure (entities, repositories, services, controllers)
 
-### Phase 2: Database & Entities
-- [ ] Create JPA Entity classes:
+### Phase 2: Database & Entities ✅
+- [x] Create JPA Entity classes:
   - `Author.java`
   - `Category.java`
   - `Post.java`
   - `Comment.java`
-- [ ] Define relationships (@ManyToOne, @ManyToMany, etc.)
-- [ ] Create database initialization script or use Hibernate auto-DDL
-- [ ] Create seed data (SQL script or data.sql) for testing
+- [x] Define relationships (@ManyToOne, @ManyToMany, etc.)
+- [x] Create database initialization script (`src/main/resources/sql/init.sql`)
+- [x] Create seed data in `init.sql` (1 author, 3 categories, 3 posts, 2 comments)
 
 ### Phase 3: Repositories
 - [ ] Create JPA Repository interfaces:
