@@ -140,13 +140,12 @@
 - [x] Request DTOs:
   - `CreateCommentRequest` (with validation annotations)
 
-### Phase 5: Services
-- [ ] Create service layer:
-  - `PostService.java`
-  - `CategoryService.java`
-  - `CommentService.java`
-- [ ] Implement business logic for each endpoint
-- [ ] Add DTO mapping logic (Entity → DTO)
+### Phase 5: Services ✅
+- [x] `PostService.java` — getAllPosts, getFeaturedPosts, getRecentPosts, getPostBySlug, getSimilarPosts, getAdjacentPosts
+- [x] `CategoryService.java` — getAllCategories, getPostsByCategory
+- [x] `CommentService.java` — getCommentsByPostSlug, createComment
+- [x] `DtoMapper.java` — Entity → DTO mapping logic
+- [x] `ResourceNotFoundException.java` — 404 exception
 
 ### Phase 6: REST Controllers
 - [ ] Create controllers:
