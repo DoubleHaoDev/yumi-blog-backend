@@ -129,15 +129,16 @@
 - [x] `PostRepository` — `findBySlug()`, `findByFeaturedPostTrue()`, `findTop3ByOrderByCreatedAtDesc()`, `findByCategoriesSlug()`, `findSimilarPosts()`, adjacent post queries
 - [x] `CommentRepository` — `findByPostSlugOrderByCreatedAtDesc()`
 
-### Phase 4: DTOs (Data Transfer Objects)
-- [ ] Create response DTOs to match frontend expectations:
+### Phase 4: DTOs (Data Transfer Objects) ✅
+- [x] Response DTOs:
+  - `AuthorDTO`
+  - `CategoryDTO`
   - `PostListDTO` (for list views)
   - `PostDetailDTO` (for single post with full content)
-  - `CategoryDTO`
   - `CommentDTO`
-  - `AuthorDTO`
-- [ ] Create request DTOs:
-  - `CreateCommentRequest`
+  - `AdjacentPostDTO` (wraps next/previous PostListDTO)
+- [x] Request DTOs:
+  - `CreateCommentRequest` (with validation annotations)
 
 ### Phase 5: Services
 - [ ] Create service layer:
