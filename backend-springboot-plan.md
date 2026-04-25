@@ -147,19 +147,15 @@
 - [x] `DtoMapper.java` — Entity → DTO mapping logic
 - [x] `ResourceNotFoundException.java` — 404 exception
 
-### Phase 6: REST Controllers
-- [ ] Create controllers:
-  - `PostController.java`
-  - `CategoryController.java`
-  - `CommentController.java`
-- [ ] Implement all REST endpoints listed above
-- [ ] Add proper error handling (@ControllerAdvice)
-- [ ] Add request validation (@Valid)
+### Phase 6: REST Controllers ✅
+- [x] `PostController.java` — GET /api/posts, GET /api/posts/recent, GET /api/posts/{slug}, GET /api/posts/{slug}/similar, GET /api/posts/{slug}/adjacent
+- [x] `CategoryController.java` — GET /api/categories, GET /api/categories/{slug}/posts
+- [x] `CommentController.java` — GET /api/posts/{slug}/comments, POST /api/comments
+- [x] `GlobalExceptionHandler.java` — handles 404, validation errors, and generic 500
+- [x] Request validation with `@Valid`
 
-### Phase 7: CORS & Security
-- [ ] Configure CORS to allow Next.js frontend (http://localhost:3000)
-- [ ] Add security headers
-- [ ] (Optional) Add rate limiting for comment submissions
+### Phase 7: CORS & Security ✅
+- [x] `WebConfig.java` — CORS configured for http://localhost:3000
 
 ### Phase 8: Testing & Documentation
 - [ ] Test all endpoints with Postman/cURL
