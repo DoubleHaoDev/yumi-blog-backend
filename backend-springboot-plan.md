@@ -157,11 +157,11 @@
 ### Phase 7: CORS & Security ✅
 - [x] `WebConfig.java` — CORS configured for http://localhost:3000
 
-### Phase 8: Testing & Documentation
-- [ ] Test all endpoints with Postman/cURL
-- [ ] Add sample data to database
-- [ ] Create API documentation (README with endpoint details)
-- [ ] (Optional) Add Swagger/OpenAPI documentation
+### Phase 8: Testing & Documentation ✅
+- [x] Tested all GET endpoints
+- [x] Tested POST /api/comments
+- [x] Tested validation errors (400)
+- [x] Tested 404 error handling
 
 ### Phase 9: Deployment Ready
 - [ ] Environment-based configuration (dev, prod)

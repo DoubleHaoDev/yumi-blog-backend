@@ -22,7 +22,7 @@ public class Comment {
     @Column(nullable = false)
     private String email;
 
-    @Column(columnDefinition = "TEXT", nullable = false)
+    @Column(name = "comment", columnDefinition = "TEXT", nullable = false)
     private String content;
 
     @Column(name = "created_at", updatable = false)
